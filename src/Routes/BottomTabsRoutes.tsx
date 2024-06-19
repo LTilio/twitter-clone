@@ -20,7 +20,7 @@ export function BottomTabsRoutes() {
     <TabRoute.Navigator
       screenOptions={{
         tabBarStyle: {
-          height: 75,
+          height: 60,
           padding: 15,
           justifyContent: "space-around",
         },
@@ -61,7 +61,7 @@ export function BottomTabsRoutes() {
                 alignItems: "center",
               }}
             >
-              <Icon name="home" size={35} color={"#a9a9a9"} />
+              <Icon name="home" size={25} color={"#a9a9a9"} />
             </View>
           ),
           tabBarLabel: "",
@@ -72,7 +72,7 @@ export function BottomTabsRoutes() {
         component={Home}
         options={{
           tabBarLabel: "",
-          tabBarIcon: () => <Icon name="search" size={35} color={"#a9a9a9"} />,
+          tabBarIcon: () => <Icon name="search" size={25} color={"#a9a9a9"} />,
           headerTitle: () => (
             <Text style={{ fontSize: 20, marginLeft: 10, fontWeight: "bold" }}>
               Search
@@ -85,7 +85,7 @@ export function BottomTabsRoutes() {
         component={Home}
         options={{
           tabBarIcon: () => (
-            <Icon name="chatbubble-ellipses" size={35} color={"#a9a9a9"} />
+            <Icon name="chatbubble-ellipses" size={25} color={"#a9a9a9"} />
           ),
           headerTitle: () => (
             <Text style={{ fontSize: 20, marginLeft: 10, fontWeight: "bold" }}>
